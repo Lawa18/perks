@@ -13,12 +13,6 @@ function showOffers() {
     // Create an HTML div 
     const div = document.createElement("div");
 
-    // id="WPartners" â†’ is an attribute we need to retrieve the iframe later on
-    // "src" â†’ is the URL of the Bubble page "iframeWidget" we've created in the previous lesson
-    // "?websiteSourceURL" â†’ it contains the URL of the webpage where we added our script 
-    // We are passing this value to the Bubble app 
-    // style="position:fixed;bottom: 2%;left: 2%; z-index:999999999999999;" â†’ this makes the widget
-    // floating over the website contents at the bottom left
 
     if(wholeURL !== 'https://perks.so/chrome_extension') {
         div.innerHTML = `<iframe id="wpartners" src="https://perks.so/iframewidget?websiteSourceURL=${websiteSourceURL}" 
